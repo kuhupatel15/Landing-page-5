@@ -1,0 +1,338 @@
+/* @font-face {
+    font-family: WNODESMOND;
+    src: url(./WNODESMOND.ttf);
+} */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: MONUMENT;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* overflow-x: hidden; */
+}
+#nav{
+    position: absolute;
+    top: 2%;
+    width: 100%;
+    min-height: 5vh;
+    z-index: 999;
+    display: flex;
+    gap: 10vw;
+    position: fixed;
+    font-size: 1vw;
+}
+#icon{
+    width: 10%;
+    min-height: 5vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1vw;
+    margin-left: 5vw;
+}
+#middlenav{
+    display: flex;
+    gap: 2vw;
+}
+#middlenav a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+#img{
+    min-height: 10vh;
+    width: 8vw;
+    border: .1vw #000 solid;
+    background-image: url(wraylogo.png);
+    background-position: center;
+    background-size: cover;
+}
+#icon i{
+    font-size: 1.5vw;
+    
+}
+
+#left{
+    min-height: 100vh;
+    width: 50%;
+    background-color:#037F3E;
+    position: relative;
+    z-index: 9;
+}
+
+#cup{
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    left: -20%;
+    top: 21%;
+    background-image: url(cup.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#tilt{
+    position: absolute;
+    width: 55%;
+    min-height: 64vh;
+    top: 21%;
+    left: 27%;
+    position: relative;
+    transform: rotate(-2deg);
+}
+#h2{
+    min-height: 12vh;
+    width: 100%;
+    color: #fff;
+    font-family: WNODESMOND;
+    font-size: 2vw;
+    text-align: center;
+    padding: 3.5vw;     
+}
+#h2 h2{
+    position: absolute;
+    top: 6%;
+    /* font-family: WNODESMOND; */
+}
+#image{
+    background-image: url(img1.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 38vh;
+}
+#btm{
+    position: absolute;
+    width: 100%;
+    height: 5vh;
+    background-color: gold;
+    bottom: 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#btm::-webkit-scrollbar{
+    display: none;
+}
+#right #cimg{
+    width: 9vw;
+    height: 23vh;
+    position: absolute;
+    right: 0%;
+    top: 10%;
+    background-image: url(circlebgremove.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#right{
+    min-height: 100vh;
+    width: 50%;
+    background-color: #000;
+}
+#cnt{
+    min-height: 100vh;
+    margin-top: 3vh;
+    width: 100%;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8vw;
+    
+}
+#cnt p{
+    font-size: .9vw;
+    width: 90%;
+    font-weight: 100;
+    opacity: .8;
+}
+#cnt h1{
+    font-size: 5vw;
+    line-height: 4vw;
+}
+.hollow{
+    font-family: Monument;
+    
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: .03vw white ;
+}
+#scroll{
+    font-size: 1vw;
+    min-height: 5vh;
+    width: 60%;
+    display: flex;
+    gap: 1vw;
+    border-bottom: .2vw gold solid;
+}
+
+#btm h3 {
+    margin-top: 5px;
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 1.2vw;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes move{
+    0%{
+        transform: translateX(0);
+    }
+    
+    100%{
+        transform: translateX(calc(-100%));
+    }
+}
+#main2{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000;
+}
+#main2 h1{
+    font-size: 4.5vw;
+    color: #fff;
+    
+}
+
+#txt2{
+    position: absolute;
+    top: 118%;
+    left: 8%;
+}
+#circle{
+    width: 6%;
+    height: 12vh;
+    border-radius: 50%;
+    z-index: 999;
+    border:yellow .3vw solid;
+    position: absolute;
+    top: 177%;
+    left: 17%;
+}
+#img1{
+    position: absolute;
+    top: 135%;
+    left: 8%;
+    height: 38vh;
+    width: 15%;
+    background-image: url(img7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#img2{
+    position: absolute;
+    top: 141%;
+    left: 30%;
+    height: 38vh;
+    width: 15%;
+    background-image: url(img2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#img3{
+    position: absolute;
+    top: 135%;
+    left: 52%;
+    height: 38vh;
+    width: 15%;
+    background-image: url(img4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#img4{
+    position: absolute;
+    top: 146%;
+    left: 74%;
+    height: 38vh;
+    width: 15%;
+    background-image: url(img3.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+#btm2{
+    position: absolute ;
+    min-height: 8vh;
+    left: 5%;
+    width: 90%;
+    border-bottom: .2vw solid #fff;
+    bottom: -95%;
+    text-align: center;
+    color: #fff;
+    
+}
+#btm2 h5{
+    margin-top: 2vw;
+}
+#main3{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #037F3E;
+}
+#img5{
+    position: absolute;
+    top: 242%;
+    left: 20%;
+    height: 40vh;
+    width: 17%;
+    background-image: url(img2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#mid{
+    
+    position: absolute;
+    
+    top: 234%;
+    left: 40%;
+    min-height: 60vh;
+    width: 20%;
+}
+#mid h6{
+    position: absolute;
+    font-size: 2.5vw;
+    color: gold;
+    left: 8%;
+    top: 76%;
+}
+#img6{
+    
+    background-image: url(img9.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    width: 100%;
+}
+#img7{
+    position: absolute;
+    top: 242%;
+    left: 63%;
+    height: 40vh;
+    width: 17%;
+    background-image: url(img2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#txt3 h2{
+    font-size: 4.5vw;
+    color: #fff;
+}
+#txt3{
+    position: absolute;
+    top: 217%;
+    left: 42%;
+    z-index: 999;
+}
+
+
